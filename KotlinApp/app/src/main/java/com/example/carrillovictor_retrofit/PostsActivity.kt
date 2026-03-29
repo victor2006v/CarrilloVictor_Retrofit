@@ -25,12 +25,7 @@ class PostsActivity : AppCompatActivity() {
         setupRecyclerView()
 
         binding.btnFetchPosts.setOnClickListener {
-            val input = binding.etNumber.text.toString()
-            if (input.isNotEmpty()) {
-                fetchPosts()
-            } else {
-                Toast.makeText(this, "Please enter an integer", Toast.LENGTH_SHORT).show()
-            }
+            fetchPosts()
         }
     }
 
